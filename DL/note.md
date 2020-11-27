@@ -19,17 +19,16 @@ based on concepts from multivariable calculus
 
 search in continuous state space
 
+> $$ c^2 = 5 $$
 
+    gradientDescent(E:Error function){
+        $S$ = starting n-dimensional vector;
+        repeat{
+            G = 
+        } until()
+        return
+    }
 
-```c
-gradientDescent(E:Error function){
-    S = starting n-dimensional vector;
-    repeat{
-        G = 
-    } until()
-    return
-}
-```
 # 3 损失函数
 
 3.1 交叉熵损失函数
