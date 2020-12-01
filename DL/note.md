@@ -1,4 +1,4 @@
-# 1 语义分割
+# 1 语义分割综述
 
 ## 1.1 评价指标-miou/fwiou
 基于混淆矩阵计算
@@ -79,27 +79,43 @@ gradientDescent(L){  //损失函数输入
 
 
 
-# 5 目标检测&&实例分割
 
-## 5.1 RCNN家族
 
-### Faster-RCNN：
+# 5 目标检测RCNN家族
 
-> cnn提取feature map，接rpn网络进行目标框定位，接roi pooling将目标框对应特征图resize到相同的尺度，两层全连接层后分别进行目标的softmax分类和基于回归的目标框精修。
+## Faster-RCNN：
 
-### RoI和RoI Pooling
-> 在Faster R-CNN中，RoI是Regions of Interest的意思，又叫Region Proposals，是区域候选网络Region Proposal Network, RPN的输出结果。
-> RoI Pooling的计算原理可以参考以下动图:
+> 1. cnn提取feature map，接rpn网络进行目标框定位，接roi pooling将目标框对应特征图resize到相同的尺度，两层全连接层后分别进行目标的softmax分类和基于回归的目标框精修。
+
+RoI和RoI Pooling
+> 1. 在Faster R-CNN中，RoI是Regions of Interest的意思，又叫Region Proposals，是区域候选网络Region Proposal Network, RPN的输出结果。
+> 2. RoI Pooling的计算原理可以参考以下动图:
 > 
 > ![RoI Pooling](https://img-blog.csdn.net/20180511113933913?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE0MzY0Mjk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
+## 实现细节
+超参数
+> 1. 如果RoI和GD的IoU大于0.5则该RoI被认为是正样本，反之亦然；
+> 2. 按照正负样本1:3的比例抽取RoIs进行训练
+> 3. 学习率随着迭代次数增加而减小
+
+## 实例分割是个什么
+
+> 何凯明大神所言，实例分割有两种思路，一是segmentation-first，二是instance-first，Mask R-CNN是后者
+
+RoI Pooling的缺陷和RoIAlign的引入
+
+> 分块池化导致RoI和Feaure Map错位(misalignments)，这对分类来说带来误差可以忽略不记，但是对于逐像素的分割掩膜来说影响就大了。
 
 Mask-RCNN：
 
-> 目标检测用了faster r-cnn，特征提取用了fpn，mask部分没看懂，需要查找资料结合代码看。
+> 目标检测用了faster r-cnn，特征提取用了fpn
 
+实验提升技巧
+> 1. 端到端训练相比先训练RPN再训练Mask R-CNN会提升精度
+> 2. 基于ImageNet预训练可以提升精度
+> 3. 训练时增强可以提升精度
+> 4. 把ResNeXt从101层提升到152层可以提升精度
+> 5. 测试时增强可以提升精度
 
-
-
-
-# 5.2 YOLO
+# 6 YOLO
