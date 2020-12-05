@@ -1,0 +1,385 @@
+{
+    "root": {
+        "data": {
+            "id": "c7jsqrfs50g0",
+            "created": 1607064282637,
+            "text": "detector"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c7jt84n5n140",
+                    "created": 1607065643572,
+                    "text": "Input"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c7jsr9x0pn40",
+                    "created": 1607064322861,
+                    "text": "backbone",
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7jsrp8xn4w0",
+                            "created": 1607064356233,
+                            "text": "pretrained on ImageNet",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c7jsssbjk880",
+                            "created": 1607064441286,
+                            "text": "type",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7jssxxccl40",
+                                    "created": 1607064453488,
+                                    "text": "ResNet",
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jst13xig80",
+                                    "created": 1607064460416,
+                                    "text": "ResNeXt",
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jstew9ylk0",
+                                    "created": 1607064490429,
+                                    "text": "DenseNet",
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jstki31so0",
+                                    "created": 1607064502631,
+                                    "text": "VGG",
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jta2debsw0",
+                                    "created": 1607065795356,
+                                    "text": "EfficientNet-B0/B7"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c7jt5gl9kd40",
+                    "created": 1607065434486,
+                    "text": "neck",
+                    "layout": null,
+                    "background": "#f79646"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7jtdlv92880",
+                            "created": 1607066072887,
+                            "text": "Additional blocks"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7jtem9f3d40",
+                                    "created": 1607066152108,
+                                    "text": "SPP"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jtenuom000",
+                                    "created": 1607066155571,
+                                    "text": "ASPP"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jtetfummg0",
+                                    "created": 1607066167735,
+                                    "text": "SAM"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7jtdxyu3hc0",
+                            "created": 1607066099226,
+                            "text": "Path-aggregation blocks",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7jt6vhxw7s0",
+                                    "created": 1607065545301,
+                                    "text": "FPN"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jt752ui9k0",
+                                    "created": 1607065566156,
+                                    "text": "PAN"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jt7btzxg80",
+                                    "created": 1607065580859,
+                                    "text": "NAS_FPN"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jt79v353s0",
+                                    "created": 1607065576572,
+                                    "text": "BiFPN"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c7jsrea2hqg0",
+                    "created": 1607064332357,
+                    "text": "head",
+                    "layout": null,
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7jss7pcbmo0",
+                            "created": 1607064396408,
+                            "text": "predict classes and bounding boxes of objects",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c7jsucal3qw0",
+                            "created": 1607064563128,
+                            "text": "type",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7jsugbr2c00",
+                                    "created": 1607064571905,
+                                    "text": "one-stage(Dense Prediction",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7jszcrr4qg0",
+                                            "created": 1607064955987,
+                                            "text": "ancher-free",
+                                            "expandState": "expand"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c7jt295nxeo0",
+                                                    "created": 1607065183213,
+                                                    "text": "CenterNet"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c7jt2lc6k800",
+                                                    "created": 1607065209729,
+                                                    "text": "CornerNet"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c7jt2emdcps0",
+                                                    "created": 1607065195107,
+                                                    "text": "FCOS"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c7jtiips6m00",
+                                            "created": 1607066457847,
+                                            "text": "ancher-based",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c7jtitg127c0",
+                                                    "created": 1607066481202,
+                                                    "text": "RPN"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c7jsylehnpc0",
+                                                    "created": 1607064896411,
+                                                    "text": "SSD"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c7jsyjb2gyo0",
+                                                    "created": 1607064891851,
+                                                    "text": "YOLO"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c7jsyn6sl4g0",
+                                                    "created": 1607064900300,
+                                                    "text": "RetinaNet"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jsulrpsz40",
+                                    "created": 1607064583755,
+                                    "text": "two-stage(Sparse Prediction",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7jtm1vl0w00",
+                                            "created": 1607066734649,
+                                            "text": "ancher-based",
+                                            "expandState": "expand"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c7jsvsjzeew0",
+                                                    "created": 1607064676889,
+                                                    "text": "R-CNN series",
+                                                    "layout": null,
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c7jsw17mg940",
+                                                            "created": 1607064695732,
+                                                            "text": "fast R-CNN",
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c7jsw8gf9rs0",
+                                                            "created": 1607064711502,
+                                                            "text": "faster R-CNN",
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c7jsw9cb7lk0",
+                                                            "created": 1607064713430,
+                                                            "text": "R-FCN",
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "c7jswspfgvc0",
+                                                            "created": 1607064755582,
+                                                            "text": "Libra R-CNN",
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c7jswxyk9z40",
+                                            "created": 1607064767018,
+                                            "text": "anchor-free",
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c7jsxji7axk0",
+                                                    "created": 1607064813918,
+                                                    "text": "RepPoints",
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "filetree",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

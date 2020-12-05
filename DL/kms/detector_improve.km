@@ -1,0 +1,341 @@
+{
+    "root": {
+        "data": {
+            "id": "c7jtvxe2tr40",
+            "created": 1607067508525,
+            "text": "提升Detector"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c7jtw6alt4g0",
+                    "created": 1607067527906,
+                    "text": "通过增加训练成本和更改训练策略，\n避免增加推理成本的提升方法"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7jtx3ro0b40",
+                            "created": 1607067600772,
+                            "text": "数据扩充来增加训练图像的多样性，\n提升复杂环境下的鲁棒性",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7jua07lsg80",
+                                    "created": 1607068611763,
+                                    "text": "像素级别调整，\n保留像素值",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7ju0hk88fc0",
+                                            "created": 1607067865890,
+                                            "text": " photometric distortions\n光度学",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c7ju19d04eo0",
+                                                    "created": 1607067926403,
+                                                    "text": "亮度"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c7ju1by684w0",
+                                                    "created": 1607067932036,
+                                                    "text": "对比度"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c7ju1tdg6f40",
+                                                    "created": 1607067969965,
+                                                    "text": "色调hue"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c7ju253ckp40",
+                                                    "created": 1607067995476,
+                                                    "text": "饱和度"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c7ju2b76cqg0",
+                                                    "created": 1607068008768,
+                                                    "text": "噪声"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c7ju102i6co0",
+                                            "created": 1607067906177,
+                                            "text": "几何学",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c7ju4p3q47s0",
+                                                    "created": 1607068195763,
+                                                    "text": "随即缩放"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c7ju4rt54140",
+                                                    "created": 1607068201653,
+                                                    "text": "旋转"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c7ju52kbgqo0",
+                                                    "created": 1607068225064,
+                                                    "text": "flipping翻转"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c7ju5amq6xc0",
+                                                    "created": 1607068242624,
+                                                    "text": "裁切"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jubmx5ugg0",
+                                    "created": 1607068739561,
+                                    "text": "模拟物体遮挡",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7juc2n7hc00",
+                                            "created": 1607068773788,
+                                            "text": "随机擦除"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c7juc687z8g0",
+                                            "created": 1607068781589,
+                                            "text": "CutOut"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jud8rac7c0",
+                                    "created": 1607068865460,
+                                    "text": "混合多张图像",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7judi2200g0",
+                                            "created": 1607068885702,
+                                            "text": "MixUp"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c7jue3p9sxs0",
+                                            "created": 1607068932818,
+                                            "text": "CutMix"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jueg38v0o0",
+                                    "created": 1607068959784,
+                                    "text": "GAN"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7juig6vhdk0",
+                            "created": 1607069273461,
+                            "text": "类间不平衡问题",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7jum8b54zs0",
+                                    "created": 1607069569761,
+                                    "text": "难分样本挖掘(Sparse Detection",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7jumg6wa0g0",
+                                            "created": 1607069586918,
+                                            "text": "离线方式"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c7jumpemylc0",
+                                                    "created": 1607069606977,
+                                                    "text": "将训练结果中与GD的IoU小于阈值的样本再次送到负样本训练\n弊端是到后期正样本越来越多、负样本越来越少"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c7junvjurjk0",
+                                            "created": 1607069698718,
+                                            "text": "在线方式OHEM（用在SGD算法）"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c7juq3nrlrs0",
+                                                    "created": 1607069873097,
+                                                    "text": "训练Faster R-CNN，选择loss最大的RoIs来反向传播，更新模型的权重"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c7jutfm8l6o0",
+                                            "created": 1607070134218,
+                                            "text": "扩展：用在语义分割上"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c7juvh4zktk0",
+                                    "created": 1607070294257,
+                                    "text": "Focal Loss何凯明(Dense Detection",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7jv4xa8nvc0",
+                                            "created": 1607071034681,
+                                            "text": "原因：认为一阶检测器性能差的原因是ancher滑窗过程中随机选取样本，\n导致负样本远远多于正样本，而且这些负样本多是简单负样本\n导致：这些简单负样本虽然相比难负样本loss很低，但是数量多，对loss贡献大，\n他们主导了梯度，他们才是收敛不好的罪魁祸首"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c7jv9qasruw0",
+                                            "created": 1607071411298,
+                                            "text": "解决办法：RPN训练中直接loss decay掉那些简单正样本的权重，让他们不参与loss下降"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7jvhbsvq4w0",
+                            "created": 1607072006653,
+                            "text": "BBOX回归的目标函数",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7jvhsvptg00",
+                                    "created": 1607072043829,
+                                    "text": "传统上使用平方根误差MSE目标函数直接对bbox的\n1）中心点坐标、宽度、高度执行回归\n2）左上角、右下角坐标执行回归\n3）对于ancher-based的检测器，对以上坐标的offset回归\n存在的问题是把每个坐标值看作一个单独的变量，忽略了目标的整体性"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jvm2rpyjk0",
+                                    "created": 1607072378812,
+                                    "text": "GD bbox和预测bbox重叠的IoU loss"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jvnwtm8yo0",
+                                    "created": 1607072522595,
+                                    "text": "GIoU loss除了考虑面积重叠外还考虑对象的shape和旋转角度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jvp25nokg0",
+                                    "created": 1607072612571,
+                                    "text": "DIoU loss还考虑了中心点的距离"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7jvph2fg1k0",
+                                    "created": 1607072645027,
+                                    "text": "CIoU loss"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c7juiejveug0",
+                    "created": 1607069269893,
+                    "text": "topic"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "filetree",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
