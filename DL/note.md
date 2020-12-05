@@ -119,3 +119,13 @@ Mask-RCNN：
 > 5. 测试时增强可以提升精度
 
 # 6 YOLO
+
+## YOLOv4
+
+
+
+# 7 目标检测思维导图
+
+仔细阅读[检测器分类](./kms/detector.km)
+
+仔细阅读[目标检测提升方法](./kms/detector_improve.km)
