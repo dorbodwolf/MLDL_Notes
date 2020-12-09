@@ -136,7 +136,7 @@ yolov1把输入图像划分为S*S的格栅，每个格栅负责检测中心落�
 
 ### 网络结构
 
-仔细阅读[YOLOv1模型](./kms/YOLOv1.km)
+仔细阅读[YOLOv1模型](./kms/YOLO.km)
 
 ![network_of_yolov1](https://mmbiz.qpic.cn/mmbiz_png/SdQCib1UzF3vKjfbgonxppibe0PQ9Y92IVMD3ebL12UYt4qw9qQVGHMJIfDMPej162rdFelO3GcEv8GHA04b2Phw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
@@ -172,7 +172,7 @@ yolov1把输入图像划分为S*S的格栅，每个格栅负责检测中心落�
 
 anchor boxes
 
-> 相比yolov1划分S*S大小的格栅，每个格栅预测B个目标，yolov2引入anchor boxes，在13*13的特征图上的每个cell上预测5个anchor boxes，对于每个anchor box预测bbox的的坐标、置信度和分类概率，可以预测13*13*5=845个bbox，大大提升模型召回率（漏检少了）。
+> 相比yolov1划分S*S大小的格栅，每个格栅预测B个目标，yolov2引入anchor boxes，在13 * 13的特征图上的每个cell上预测5个anchor boxes，对于每个anchor box预测bbox的的坐标、置信度和分类概率，可以预测13 * 13 * 5 = 845个bbox，大大提升模型召回率（漏检少了）。
 > 
 > 同样是ancher-based的检测器，不同于faster rcnn在每个cell手动设置9个anchor boxes，yolov2的作者通过在COCO和VOC数据集上做kmeans聚类来确定anchor boxes的个数、分布和形态。如下图：
 > 
@@ -214,7 +214,7 @@ anchor boxes
 
 模型结构：
 
-仔细阅读[YOLOv4模型](./kms/YOLOv4.km)
+仔细阅读[YOLOv4模型](./kms/YOLO.km)
 
 ## 通过聚类得到anchor boxes
 

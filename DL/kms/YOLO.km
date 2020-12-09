@@ -1,0 +1,242 @@
+{
+    "root": {
+        "data": {
+            "id": "c7kmzti0n880",
+            "created": 1607149625700,
+            "text": "YOLO"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c7ntzp00g7k0",
+                    "created": 1607474043544,
+                    "text": "YOLOv4",
+                    "expandState": "expand",
+                    "layout_right_offset": {
+                        "x": -89,
+                        "y": -1
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7kn0469lqo0",
+                            "created": 1607149648934,
+                            "text": "backbone"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7kn0aoibnc0",
+                                    "created": 1607149663098,
+                                    "text": "CSPDarknet53"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7knfooa9hc0",
+                            "created": 1607150869022,
+                            "text": "additional"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7knfvpze1k0",
+                                    "created": 1607150884362,
+                                    "text": "SPP"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7knexeboeg0",
+                            "created": 1607150809647,
+                            "text": "neck"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7knf8a2ijc0",
+                                    "created": 1607150833334,
+                                    "text": "PAnet"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7knfhi35540",
+                            "created": 1607150853410,
+                            "text": "head"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7knfjnw3w00",
+                                    "created": 1607150858114,
+                                    "text": "YOLOv3"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c7nu0czyqc00",
+                    "created": 1607474095784,
+                    "text": "YOLOV3"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7nu2hz00880",
+                            "created": 1607474263338,
+                            "text": "backbone"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7nu2lneisg0",
+                                    "created": 1607474271344,
+                                    "text": "Darknet53"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7nu2r7pxw80",
+                            "created": 1607474283456,
+                            "text": "neck"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7nu2vgiw9s0",
+                                    "created": 1607474292696,
+                                    "text": "FPN"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7nu2z53p1c0",
+                            "created": 1607474300712,
+                            "text": "head"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7nu31domjk0",
+                                    "created": 1607474305584,
+                                    "text": "YOLOv3"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c7nu0g69s6o0",
+                    "created": 1607474102696,
+                    "text": "YOLOv2"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7nu6167egg0",
+                            "created": 1607474540225,
+                            "text": "backbone"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7nu63g84v40",
+                                    "created": 1607474545184,
+                                    "text": "Darknet19"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7nui7qc4js0",
+                            "created": 1607475494873,
+                            "text": "head"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7nuia1a8880",
+                                    "created": 1607475499888,
+                                    "text": "YOLOv2"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c7nu0i6wpsw0",
+                    "created": 1607474107088,
+                    "text": "YOLOv1"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7nu6nzolx40",
+                            "created": 1607474589897,
+                            "text": "backbone"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7nu6q8dog80",
+                                    "created": 1607474594776,
+                                    "text": "類似GoogLeNet"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7nuiimcdfc0",
+                            "created": 1607475518576,
+                            "text": "head"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7nuikfwrq80",
+                                    "created": 1607475522540,
+                                    "text": "YOLOv1"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
